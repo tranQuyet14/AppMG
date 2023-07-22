@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    android:background="@drawable/bg_body_dialog">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:textColor="@color/color_text"
+        android:text="Enter the information for Class"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:background="@drawable/bg_theme_color"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:text="Please enter the information of class that does not exists yet "/>
+        <EditText
+            android:id="@+id/et_add_name_class"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_body_dialog"
+            android:padding="12dp"
+            android:hint="Class name"/>
+        <EditText
+            android:id="@+id/ed_add_code_class"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_body_dialog"
+            android:padding="12dp"
+            android:hint="Class code"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_cancel_add"
+                android:layout_width="0dp"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:text="No, Thank You"
+                android:textColor="@color/color_text"
+                android:background="@drawable/custom_button"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/btn_submit_add"
+                android:layout_width="0dp"
+                android:textColor="@color/color_text"
+                android:background="@drawable/custom_button"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

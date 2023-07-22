@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_student"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="14dp"
+    android:layout_marginTop="10dp"
+    android:layout_height="100dp"
+    android:layout_margin="5dp">
+    <RelativeLayout
+        android:background="@color/color_theme"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_name_student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_toEndOf="@+id/img_student"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="15dp"
+            android:text="Nguyễn Mạnh Tùng"
+            android:textColor="@color/color_text"
+            android:textSize="20sp" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:padding="5dp"
+            android:id="@+id/img_student"
+            android:scaleType="centerCrop"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_2"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
